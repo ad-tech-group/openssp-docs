@@ -46,11 +46,13 @@ a:hover {
 .site-footer-owner {
     display: block;
     font-weight: bold;
-    font-size: .5em;
+    font-size: .8em;
+    text-align: center;
 }
 
 .site-footer-credits {
     color: $blockquote-text-color;
-    font-size: .5em;
+    font-size: .8em;
+    text-align: center;
 }
 
