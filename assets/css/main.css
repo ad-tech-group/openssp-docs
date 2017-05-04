@@ -10,7 +10,8 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    /*color: #999;*/
+    color: black;
 }
 a:hover {
     text-decoration: none;
