@@ -16,32 +16,7 @@ a {
 a:hover {
     text-decoration: none;
 }
-/*h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}*/
-/*p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}*/
-/*footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .5em;
-}*/
 
-.site-footer{
-    font-size: .5em;
-}
-
-/*ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}*/
-
-/*ul.posts li {
-    list-style: none;
-}*/
 
 .site-footer-owner {
     display: block;
@@ -51,7 +26,6 @@ a:hover {
 }
 
 .site-footer-credits {
-    color: $blockquote-text-color;
     font-size: .8em;
     text-align: center;
 }
