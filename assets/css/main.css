@@ -29,4 +29,10 @@ a:hover {
     font-size: .8em;
     text-align: center;
 }
+.page-header {
+    background-color: #024442;
+    background-image: linear-gradient(120deg, #155799, #024442);
+    color: #fff;
+    text-align: center;
+}
 
