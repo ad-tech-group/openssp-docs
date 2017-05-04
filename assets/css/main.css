@@ -25,8 +25,12 @@ a:hover {
     line-height: 1.4em;
     color: #333;
 }*/
-footer {
+/*footer {
     border-top: 1px solid #d5d5d5;
+    font-size: .5em;
+}*/
+
+.site-footer{
     font-size: .5em;
 }
 
