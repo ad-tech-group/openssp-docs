@@ -42,3 +42,15 @@ a:hover {
 /*ul.posts li {
     list-style: none;
 }*/
+
+.site-footer-owner {
+    display: block;
+    font-weight: bold;
+    font-size: .5em;
+}
+
+.site-footer-credits {
+    color: $blockquote-text-color;
+    font-size: .5em;
+}
+
