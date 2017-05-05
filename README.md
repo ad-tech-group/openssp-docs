@@ -35,4 +35,5 @@ You can use it, improve it or whatever you want with it.
 
 Comments, proposals and improvements are welcome.
 For more informations contact André Schmer [schmer at ad-tech-group.com].
+
 ATG, May 2017.
