@@ -28,8 +28,8 @@ Those file are:
 
 ### Data Caching:
 This Open-SSP uses some predefined data to enrich the incoming requests and building the various bidrequests.
-Those data e.g. for Websites have to be loaded in a asynchronous and continous way.
-The data will be loaded via a restful service normally cause of to call a database in realtime is not performantly possible, therefore this SSP loads in a periodically manner the data from a webservice and stores those data in a memory based key-value store, called the cache.
+Those data e.g. for Websites have to be loaded in a asynchronous way.
+The data will be loaded via a restful service usually with the fact that to call a database in realtime is not performantly possible. Therefore this SSP loads the data from a webservice in a periodically manner and stores those data in a memory based key-value store, called the cache.
 
 You can use it, improve it or whatever you want with it.
 
