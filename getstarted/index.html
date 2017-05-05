@@ -1,3 +1,74 @@
 ---
+layout: default
 title: Get Started
 ---
+
+<div>
+  
+  <div>
+		<h1>Get Started</h1>
+	</div>
+
+	<div>
+		<h3>Local environment</h3>
+		 <ol type="1">
+			<li>Download zip file or clone the project if you want to contribute to the project.</li>
+			<li>Import the project into your desired IDE via Maven Import.</li>
+			<li>Build the project from the parent with Maven Goal mvn clean install. A war file will be generated into the target folder of the core project.</li>
+			<li>Run the ssp from the core project with Maven Goal mvn tomcat7:run-war.</li>
+			<li>The SSP is now ready to retrieve requests on Port 8080 for Testing and Debugging purposes.</li>
+		</ol> 
+	</div>
+
+	<div>
+		<h3>Server setup</h3>
+		<div>
+			Describes a easy way to setup the SSP
+		</div>
+		<div>
+			<b>Prerequisites and Setup:</b>
+		</div>
+		<div>
+			<ul style="list-style-type:square">
+				<li>Install and configure a Servlet Container e.g. Apache Tomcat.</li>
+				<li>Required: Set up a properties folder and store the resource file global.runtime.xml, local.runtime.xml and log4j2.xml (optional) in it.<br/>
+					For example if you choose Apache Tomcat as your Servlet Container, create the properties folder where the CATALINA_HOME is based.</li>
+				<li>Recommended: Set up the runtime files global.runtime.xml and local.runtime.xml.<br />
+					These files will be read during startup process. A Watchdog watches these files for changes and starts the a loadprocess to store the values. See the runtime files for mor information.</li>
+				<li>Optional: Set up a log structure for customized logs. Default logging is console logging.</li>
+			</ul>
+
+			<ul style="list-style-type:square">
+				<li>Define a request tag which should be placed in the adspace.<br/>
+					The adspace is the placeholder for a markup which will be served by the SSP.<br/>
+					The definition of the tag and the parameters depends on your requirements.</li>
+				<li>Adjust the com.atg.openssp.core.entry.EntryValidator to read the values and store those data in the SessionAgent.</li>
+				<li>You need a opportunity to enrich the bidrequest to a demand side with the required data as the OpenRTB protocol provides.<br />
+					A common way is to setup a service (e.g. RESTful service) which loads periodically the data to the lets say the Publisher and Websites and so on.<br />
+					This data came out from a database and will be stored into the memory of the SSP (Cache) where the SSP can read the data from.<br />
+					Example: Define a request parameter e.g. &publisher=1234 with the meaning of the id of the publisher as it is stored in your database.<br />
+					Read the cached data with the key of 1234 and you will retrive further informations to the publisher which you can put into the bidrequest and so on.</li>
+
+					<li>Of course, you need first a Demand-Partner to send the bidrequest. Therefore it is also recommended to create a service to load those data.<br />
+					The RTB DemandService will load the Demand-Partner (also called supplier), send bidrequest to them and waits for an answer.</li>
+				</li>
+		</div>
+	</div>
+
+	<div>
+		<h3>Deployment to Server</h3>
+		<div>
+			After finishing your setup, you are only a few steps away form running the system.
+		</div>
+		<ol type="1">
+			<li>Build the project from the parent with Maven Goal mvn clean install</li>
+			<li>Deploy the war file into the webapps folder</li>
+			<li>Run the Servlet Container</li>
+		</ol>
+	</div>
+
+	<div>
+		And finally send request to your SSP.
+	</div>
+  
+</div>
