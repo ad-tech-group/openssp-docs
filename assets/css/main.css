@@ -35,4 +35,8 @@ a:hover {
     color: #fff;
     text-align: center;
 }
+.faq_item{
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid;
+}
 
