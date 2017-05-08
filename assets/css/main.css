@@ -39,4 +39,11 @@ a:hover {
     padding: 20px 0px 20px 0px;
     border-bottom: 1px solid;
 }
+.item_header{
+    color: black;
+}
+.item_btt{
+    font-size: 8px;
+}
+
 
