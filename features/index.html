@@ -1,0 +1,2 @@
+Data Caching:
+This OpenSSP uses predefined data to enrich the incoming requests and build the various bid requests. This data e.g. for websites has to be loaded in an asynchronous manner. The data will be loaded via a restful service, usually due to the fact that calling a database in realtime is not feasible. Therefore, this SSP loads the data from a web service periodically and stores that data in a memory based key-value store called the cache.
