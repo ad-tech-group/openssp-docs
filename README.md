@@ -14,6 +14,7 @@ This SSP is specifically optimized for handling video ad impressions, but it can
 5. After the auction is finished, the winner is evaluated and a response to the client will be send.
 
 Feel free to use the code, modify it and improve it!
+
 Comments, proposals and suggestions are welcome. For more information, feel free to contact André Schmer [schmer at ad-tech-group.com].
 
 ATG, May 2017.
