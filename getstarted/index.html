@@ -12,50 +12,50 @@ title: Get Started
 	<div>
 		<h3>Local environment</h3>
 		 <ol type="1">
-			<li>Download zip file or clone the project if you want to contribute to the project.</li>
-			<li>Import the project into your desired IDE via Maven Import.</li>
-			 <li>Build the project from the parent with Maven Goal <code>mvn clean install</code>. <br />A war file will be generated into the target folder of the core project.</li>
-			<li>Run the ssp from the core project with Maven Goal <code>mvn tomcat7:run-war</code>.</li>
-			<li>The SSP is now ready to retrieve requests on Port 8080 for Testing and Debugging purposes.</li>
+			<li>Download the Zip file or clone the project if you would like to contribute to the project.</li>
+			<li>2. Import the project into your desired IDE via Maven Import.</li>
+			 <li>Build the project from the parent with Maven Goal <code>mvn clean install</code>. <br />A war file will be generated within the target folder of the core project.</li>
+			<li>Run OpenSSP from the core project with Maven Goal <code>mvn tomcat7:run-war</code>.</li>
+			<li>OpenSSP is now ready to retrieve requests on port 8080 for developing, testing and debugging purposes.</li>
 		</ol> 
 	</div>
 
 	<div>
 		<h3>Server setup</h3>
 		<div>
-			<b>Prerequisites and Setup:</b>
+			<b>Prerequisites:</b>
 		</div>
 		<div>
 			<ul style="list-style-type:square">
-				<li>Install and configure a Servlet Container e.g. Apache Tomcat.</li>
-				<li>Required: Set up a properties folder and store the resource files <code>global.runtime.xml</code>, <code>local.runtime.xml</code> and <code>log4j2.xml</code> (optional) in it.<br/>
-					For example if you choose Apache Tomcat as your Servlet Container, create the properties folder where the CATALINA_HOME is based.</li>
+				<li>Required: Install and configure a Servlet Container e.g. Apache Tomcat.</li>
+				<li>Required: Set up a properties folder to store the resource files <code>global.runtime.xml</code>, <code>local.runtime.xml</code> and <code>log4j2.xml (optional)</code>.<br/>
+					For example, if you choose Apache Tomcat as your Servlet Container, create the properties folder where the CATALINA_HOME is located.</li>
 				<li>Recommended: Set up the runtime files <code>global.runtime.xml</code> and <code>local.runtime.xml</code>.<br />
-					These files will be read during startup process. A Watchdog watches these files for changes and starts the a loadprocess to store the values. See the runtime files for mor information.</li>
+					These files will be read during startup process. A Watchdog observes these files for changes and starts the a load process to store the values. See the runtime files for more information.</li>
 				<li>Optional: Set up a log structure for customized logs. Default logging is console logging.</li>
 			</ul>
 
 			<ul style="list-style-type:square">
-				<li>Define a request tag which should be placed in the adspace.<br/>
-					The adspace is the placeholder pon the publishers site for a markup which will be served by the SSP.
-					The definition of the tag and the parameters depends on your requirements.</li>
-				<li>Adjust the <code>com.atg.openssp.core.entry.EntryValidator</code> to read the values and store those data in the SessionAgent.</li>
-				<li>You need a opportunity to enrich the bidrequest to a demand side with the required data as the OpenRTB protocol provides.<br />
-					A common way is to setup a service (e.g. RESTful service) which loads periodically the data to the lets say the Publisher and Websites and so on.<br />
-					This data came out from a database and will be stored into the memory of the SSP (Cache) where the SSP can read the data from.<br />
-					Example: Define a request parameter e.g. <code>&publisher=1234</code> with the meaning of the id of the publisher as it is stored in your database.<br />
-					Read the cached data with the key of 1234 and you will retrive further informations to the publisher which you can put into the bidrequest and so on.</li>
+				<li>Define a request tag and place it within the ad space.<br/>
+					The ad space is the placeholder on the publisher's site for a markup which will be served by the SSP.
+					The definition of the tag and the parameters depend on your requirements.</li>
+				<li>Adjust the <code>com.atg.openssp.core.entry.EntryValidator</code> to read the values and store this data in the SessionAgent.</li>
+				<li>You need an external data source in order to enrich the bid request to a demand side with the required data as the OpenRTB protocol prescribes.<br />
+					A common way is to setup a service (e.g. RESTful service) which periodically loads the data of publishers, websites etc.
+					This data comes from a database and will be stored onto the memory of the SSP (cache).<br />
+					Example: Define a request parameter e.g. <code>&publisher=1234</code> with ID of the publisher as it is stored in your database.<br />
+					Read the cached data with the key of 1234 and you will retrieve further information about the publisher which you can put into the bid request.</li>
 
-					<li>Of course, you need first a Demand-Partner to send the bidrequest. Therefore it is also recommended to create a service to load those data.<br />
-					The RTB DemandService will load the Demand-Partner (also called supplier), send bidrequest to them and waits for an answer.</li>
-				</li>
+				<li>Of course, you first need a demand partner to send the bid request to. Therefore, it is also recommended to create a service to load that data.
+					The RTB DemandService will load the demand partner (also called supplier), send the bid request to them and wait for an answer.</li>
+			</ul>
 		</div>
 	</div>
 
 	<div>
 		<h3>Deployment to Server</h3>
 		<div>
-			After finishing your setup, you are only a few steps away form running the system.
+			After finishing your setup, you are only a few steps away from succesfully running the system.
 		</div>
 		<ol type="1">
 			<li>Build the project from the parent with Maven Goal <code>mvn clean install</code></li>
