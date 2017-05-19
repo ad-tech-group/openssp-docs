@@ -11,23 +11,23 @@ title: Features
   <div>
 	  <h3>Data Caching</h3>
 	  <div>
-    		This OpenSSP uses predefined data to enrich the incoming requests and build the various bid requests.<br />
+    		The OpenSSP uses predefined data to enrich the incoming requests and build the various bid requests.<br />
     		This data e.g. for websites has to be loaded in an asynchronous manner.<br />
-    		The data will be loaded via a restful service, usually due to the fact that calling a database in realtime is not feasible.<br />
+    		The data will be loaded via a RESTful service, usually due to the fact that calling a database in realtime is not feasible.<br />
     		Therefore, this SSP loads the data from a web service periodically and stores that data in a memory based key-value store called the cache.
 	  </div>
 	  
 	  <h3>Second Price Sealed Bid</h3>
 	  <div>
-    		OpenSSP mainly supports Sescond Price Sealed Bid.<br />
-		What does it mean? The bidder with the highest bid wins the auction but has just to pay the price of the second best bidder with an amount of 1 cent.
+    		OpenSSP mainly supports Second Price Sealed Bid.<br />
+		What does that mean? The bidder with the highest bid wins the auction but only has to pay the price of the second best bidder plus 1 cent.
 	  </div>
 	  
 	  <h3>Multi channel support</h3>
 	  <div>
     		Multi channel support means that not only RTB demand provided by a Demand Side Platform will be considered in the auction, <br />
-		also demand from an optional Adserver can be filled to the set of auctionable bids. <br />
-		But thats not enough, OpenSSP also offers the opportunity to implement adapter to other SSP's,<br />
+		but also demand from an optional Adserver.<br />
+		OpenSSP also offers the opportunity to implement adapters to other SSP's,<br />
 		sending them requests corresponding to the bidrequest and consider their response to the set of auctionable bids.
 	  </div>
 	  
