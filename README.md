@@ -15,6 +15,6 @@ This SSP is specifically optimized for handling video ad impressions, but it can
 
 Feel free to use the code, modify it and improve it!
 
-Comments, proposals and suggestions are welcome. For more information, feel free to contact André Schmer [schmer at ad-tech-group.com].
+Comments, proposals and suggestions are welcome.
 
 ATG, May 2017.
