@@ -6,6 +6,9 @@ OpenSSP is a so-called multi-channel SSP which means that not only does it suppo
 
 This SSP is specifically optimized for handling video ad impressions, but it can also be used for any other type of ad impressions such as display etc. Feel free to examine the code and modify it as you need.
 
+
+![OpenSSp RTB Ecosystem](assets/openssp-eco.png)
+
 ### General SSP Functionality:
 1. A tag with a link to OpenSSP needs to be placed on a website that contains the ad placement. This link may contain a set of parameters (depending on your preferences). 
 2. OpenSSP is then called from the tag and the parameters are extracted and validated.
