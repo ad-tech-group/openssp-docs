@@ -1,6 +1,6 @@
 ## OpenSSP by ATG
 
-### This is an open-source supply-side platform for general use with full OpenRTB support up to version 2.4.
+### This is an open-source supply-side platform for general use with full OpenRTB support.
 
 OpenSSP is a so-called multi-channel SSP which means that not only does it support RTB, but also channels to ad server and further SSP implementation. The RTB support is a core feature and needs no extra definition.
 
