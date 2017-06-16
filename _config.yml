@@ -3,4 +3,4 @@ theme: jekyll-theme-cayman
 gems:
   - jekyll-seo-tag
   
-description: open source ssp, Supply Side Platform
+description: The open source Supply Side Platform
