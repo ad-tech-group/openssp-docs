@@ -33,9 +33,6 @@ title: Get Started
 				<li>Recommended: Set up the runtime files <code>global.runtime.xml</code> and <code>local.runtime.xml</code>.<br />
 					These files will be read during startup process. A Watchdog observes these files for changes and starts the load process to store the values. See the runtime files for more information.</li>
 				<li>Optional: Set up a log structure for customized logs. Default logging is console logging.</li>
-			</ul>
-
-			<ul style="list-style-type:square">
 				<li>Define a request tag and place it within the ad space.<br/>
 					The ad space is the placeholder on the publisher's site for a markup which will be served by the SSP.
 					The definition of the tag and the parameters depend on your requirements.</li>
@@ -44,7 +41,7 @@ title: Get Started
 					A common way is to setup a service (e.g. RESTful service) which periodically loads the data of publishers, websites etc.
 					This data comes from a database and will be stored onto the memory of the SSP (cache).<br />
 					Example: Define a request parameter e.g. <code>&publisher=1234</code> with ID of the publisher as it is stored in your database.<br />
-					Read the cached data with the key of 1234 and you will retrieve further information about the publisher which you can put into the bid request.</li>
+					Read the cached data with the key of <code>1234</code> and you will retrieve further information about the publisher which you can put into the bid request.</li>
 
 				<li>Of course, you first need a demand partner to send the bid request to. Therefore, it is also recommended to create a service to load that data.
 					The RTB DemandService will load the demand partner (also called supplier), send the bid request to them and wait for an answer.</li>
