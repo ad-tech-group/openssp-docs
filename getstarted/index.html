@@ -43,11 +43,11 @@ title: Get Started
 					Example: Define a request parameter e.g. <code>&publisher=1234</code> with ID of the publisher as it is stored in your database.<br />
 					Read the cached data with the key of <code>1234</code> and you will retrieve further information about the publisher which you can put into the bid request.</li>
 				
-					**Update v0.2:** to increase the user experience and avoid to set up an external data service for a test implementation of OpenSSP
+					<b>Update v0.2: to increase the user experience and avoid to set up an external data service for a test implementation of OpenSSP
 					, we provide some new example JSON based datastructures and its corresponding DataBroker. 
 					With these structures it is very easy to setup the data you need to fill a valid and complete bidrequest.
 					Additionally the payload of SSP request is reduced to only one parameter.
-					Example: a call to OpenSSP with '?site=1' will map to an entry within 'site_db.json' and loads its data from cache.
+					Example: a call to OpenSSP with '?site=1' will map to an entry within 'site_db.json' and loads its data from cache.</b>
 
 				<li>Of course, you first need a demand partner to send the bid request to. Therefore, it is also recommended to create a service to load data regarding to the partner.
 					The RTB <code>com.atg.openssp.core.exchange.channel.rtb.DemandService</code> will load the demand partner (also called supplier), send the bid request to them and wait for an answer.</li>
