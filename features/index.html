@@ -12,9 +12,9 @@ title: Features
 	   <h3>Multi channel support</h3>
 	  <div>
     		Multi channel support means that not only RTB demand provided by a Demand Side Platform<br />
-		will be considered in the auction, but also demand from an optional Adserver.<br />
+		will be considered in the auction, but also demand from an optional ad server.<br />
 		OpenSSP also offers the opportunity to implement adapters to other SSP's,<br />
-		sending them requests corresponding to the bidrequest and consider their response to the set of auctionable bids.
+		sending them requests corresponding to the bidrequest and considering their responses in the set of auctionable bids.
 	  </div>
 	  
 	  <h3>Second Price Sealed Bid</h3>
@@ -31,14 +31,14 @@ title: Features
 	  
 	  <h3>Runtime configurable</h3>
 	  <div>
-		OpenSSP is also performed to configure during runtime via properties config files.<br />
+		OpenSSP is built to be configured during runtime via properties config files.<br />
 		A Watchdog observes a directory and specific files for changes permanently and reloads<br >
 		after detecting a change the properties into the application context.
 	  </div>
 		  
 	  <h3>Data Caching</h3>
 	  <div>
-    		The OpenSSP uses predefined data to enrich the incoming requests and build the various bid requests.<br />
+    		OpenSSP uses predefined data to enrich the incoming requests and build the various bid requests.<br />
     		This data e.g. for websites has to be loaded in an asynchronous manner.<br />
     		The data will be loaded via a RESTful service, usually due to the fact that calling a database in realtime is not feasible.<br />
     		Therefore, OpenSSP loads the data from a web service periodically and stores that data in a memory based key-value store called the cache.
