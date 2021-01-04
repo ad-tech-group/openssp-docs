@@ -1,4 +1,4 @@
-## OpenSSP by One tech Group
+## OpenSSP by One Tech Group
 
 ### This is an open-source supply-side platform for general use with full OpenRTB support.
 
