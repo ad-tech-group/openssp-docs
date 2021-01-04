@@ -1,4 +1,4 @@
-## OpenSSP by ATG
+## OpenSSP by One tech Group
 
 ### This is an open-source supply-side platform for general use with full OpenRTB support.
 
@@ -21,4 +21,4 @@ Feel free to use the code, modify it and improve it!
 
 Comments, proposals and suggestions are welcome.
 
-ATG, May 2017.
+OTG, May 2017.
